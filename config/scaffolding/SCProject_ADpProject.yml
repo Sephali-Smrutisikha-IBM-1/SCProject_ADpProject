@@ -64,7 +64,7 @@ configurationVariables:
   ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.networkProtocol
   : tcp
   ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_false.connectionManagerSettings.poolable
-  : "false"
+  : "true"
   ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_false.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_false.connectionManagerSettings.poolIncrementSize
