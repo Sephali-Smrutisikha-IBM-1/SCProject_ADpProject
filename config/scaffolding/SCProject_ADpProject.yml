@@ -7,6 +7,64 @@ packages:
   gitUrl: https://github.com/Sephali-Smrutisikha-IBM-1
   gitUsername: Sephali-Smrutisikha-IBM-1
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:conn_AutoCommit_true
+  packages:
+  - name: SCProject_ADpProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.startupBackoffSecs
+  : "10"
   jdbcfunc.SAPTxStore.failFastMode: false
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.trustStore
+  : ""
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.otherProperties
+  : driverType=thin;
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionEnabled
+  : "false"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.keyStore
+  : ""
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.maximumPoolSize
+  : "10"
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.databaseName
+  : ORCL
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.password
+  : "{AES}lSc0vTI7l91AM43ToQqQWw=="
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.SCProject_ADpProject.project.scproject_adp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.conn_AutoCommit_true.connectionManagerSettings.minimumPoolSize
+  : "1"
